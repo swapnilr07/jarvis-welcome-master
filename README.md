@@ -82,7 +82,7 @@
 **On the next terminal start** you get the Jarvis welcome:
 
 ```text
-Created By Swapnilrathod07
+Created By Swapnilr07
 ----------------------------
 o      o        8
 8      8        8
