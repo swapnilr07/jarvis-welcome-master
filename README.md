@@ -76,7 +76,7 @@ pkg install git mpv -y
 git clone https://github.com/swapnilr07/jarvis-welcome-master.git
 cd jarvis-welcome-master
 chmod +x *
-sh install.sh
+bash install.sh
 exit
 ```
 
