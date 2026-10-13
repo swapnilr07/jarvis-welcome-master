@@ -20,6 +20,7 @@
 
 - [About](#-about)
 - [Features](#-features)
+- [Preview](#-preview)
 - [Requirements](#-requirements)
 - [Installation](#-installation)
   - [Termux (Android)](#-termux-android)
@@ -49,6 +50,51 @@
 - ⚡ One-command installation
 - 🪶 Lightweight, only needs `git` and `mpv`
 - 🧹 Clean uninstall script included
+
+---
+
+## 📸 Preview
+
+**While installing** (one single line, it updates from 1% to 100% in place):
+
+```text
+ Setting things up, please wait...
+
+ ██████████████████░░░░░░░░░░░░ 60%  ⠹ Installing mpv
+```
+
+**When finished:**
+
+```text
+ ██████████████████████████████ 100%  ✔ Finalizing setup
+
+ ✔ All done!
+
+ ╭─ made by ─────────────────────────╮
+ │  Swapnil                          │
+ │  ◉ instagram  @cyber.techx_07     │
+ │  ⌥ github     swapnilr07          │
+ ╰───────────────────────────────────╯
+
+ Now type 'exit' & restart Termux
+```
+
+**On the next terminal start** you get the Jarvis welcome:
+
+```text
+Created By Swapnilrathod07
+----------------------------
+o      o        8
+8      8        8
+8      8 .oPYo. 8 .oPYo. .oPYo. ooYoYo. .oPYo.
+8  db  8 8oooo8 8 8      8    8 8' 8  8 8oooo8
+ b.PY.d' 8.     8 8    . 8    8 8  8  8 8.
+  8  8'   Yooo  8  YooP   YooP  8  8  8  Yooo
+
+<current date and time>
+```
+
+> 🎨 Colors are shown in the real terminal (rainbow text via `lolcat`).
 
 ---
 
@@ -147,6 +193,7 @@ rm -rf jarvis-welcome-master
 | `git: command not found` | Install git: `pkg install git` (Termux) or `sudo apt install git` (Linux) |
 | `mpv: command not found` or no sound | Install mpv: `pkg install mpv` (Termux) or `sudo apt install mpv` (Linux) |
 | `No such file or directory` after cloning | Make sure you ran `cd jarvis-welcome-master` |
+| No sound on welcome | Turn media volume up, then test: `mpv --no-video ~/.jarvis-welcome/terminal.mp3`. If that fails, reinstall mpv (`pkg install mpv`) and run `bash install.sh` again |
 | Welcome doesn't appear | Type `exit`, then fully close and reopen the terminal |
 | Package errors in Termux | Run `pkg update && pkg upgrade -y`, or reinstall Termux from F-Droid |
 | `fatal: destination path already exists` | Delete the old folder with `rm -rf jarvis-welcome-master` and clone again |
